@@ -1,0 +1,41 @@
+.secondPage{
+    height: 100vh;
+}
+
+.currentCity_{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 300px;
+    font-size: 20px;    
+    color: #ece94c;
+    background-color: black;
+}
+
+.wrapper_{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: row;
+}
+
+.hourly{
+    display: flex;
+    align-items: flex-end;
+    height: 415px;
+    width: 300px;
+    border: black 1px solid;
+    background-color: #102233;
+}
+
+.arrowBack{
+    position: fixed;
+    font-size: 50px;
+    margin-left: 18px;
+}
+

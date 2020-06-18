@@ -1,0 +1,16 @@
+.inputCity{
+   margin-top: 20px;
+   margin-bottom: 10px;
+   width: 240px;
+}
+
+.buttonAdd{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: 60px;
+}
+
+.inpBtn{
+    display: flex;
+    justify-content: center;
+}

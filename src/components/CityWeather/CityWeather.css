@@ -1,0 +1,49 @@
+.cityweather{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #ece94c;
+    background-color: black;
+    font-size: 30px;
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+}
+ 
+.wrapper{
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.syncdel{
+    display: flex;
+    flex-direction: row;
+}
+
+.synchronization{
+   margin: 10px;
+}
+
+.deleteCity{
+    margin: 10px;
+}
+
+.synchronization:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: all 0.3;
+}
+
+.deleteCity:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: all 0.3;
+}
+
+.btnAddMore{
+    transform: scale(1.05);
+    transition: all 0.3;
+}
