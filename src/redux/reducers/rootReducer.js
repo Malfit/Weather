@@ -49,8 +49,19 @@ const rootReducer = (state = initialState, action) => {
       };
     }
     case GET_NEW_CITY_WEATHER_SUCCESS: {
+      if (state.cities.includes(action.payload.id)) {
+        return state;
+      }
+      const obj = {
+        id: action.payload.id,
+        name: action.payload.name,
+        temperature: Math.round(action.payload.main.temp),
+        icon: action.payload.weather[0].icon,
+      };
       return {
-        ...state, cities: [action.payload, ...state.cities],
+        ...state,
+        cities: [action.payload.id, ...state.cities],
+        data: [obj, ...state.data],
       };
     }
     case GET_ONE_CITY_HOURLY_WEATHER_SUCCESS: {
@@ -62,9 +73,12 @@ const rootReducer = (state = initialState, action) => {
       const outputArray = state.cities
         .filter((city) => city !== action.payload);
       localStorage.setItem('allCities', JSON.stringify(outputArray));
+      const outputArrayData = state.data
+        .filter((city) => city.id !== action.payload);
       return {
         ...state,
         cities: outputArray,
+        data: outputArrayData,
       };
     }
     default:

@@ -22,7 +22,7 @@ const CurrentCityWeather = () => {
         && (
           <div className="secondPage">
             <div className="arrowBack">
-              <Link to="/weather-cities/">
+              <Link to="/Weather">
                 <FontAwesomeIcon
                   icon={faArrowCircleLeft}
                 />

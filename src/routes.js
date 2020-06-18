@@ -4,11 +4,11 @@ import CurrentCityWeather from './pages/CurrentCityWeather';
 
 const routes = [
   {
-    path: '/weather-cities/:id',
+    path: '/Weather/:id',
     component: <CurrentCityWeather />,
   },
   {
-    path: '/weather-cities',
+    path: '/Weather',
     component: <CitiesWeather />,
     exact: true,
   },

@@ -12,7 +12,7 @@ const CitiesWeather = () => {
 
   useEffect(() => {
     dispatch(getCitiesWeatherData(cities));
-  }, [dispatch, cities]);
+  }, []);
 
   useEffect(() => {
     if (!JSON.parse(localStorage.getItem('allCities'))) {
@@ -21,6 +21,7 @@ const CitiesWeather = () => {
   });
 
   const citiesWeather = useSelector((state) => state.data);
+
   const [inputValue, setInputValue] = useState('');
 
   return (

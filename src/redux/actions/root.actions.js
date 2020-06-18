@@ -86,7 +86,7 @@ export const getNewCityWeather = (name) => async (dispatch) => {
     localStorage.setItem('allCities', JSON.stringify(currentData));
     dispatch({
       type: GET_NEW_CITY_WEATHER_SUCCESS,
-      payload: response.data.id,
+      payload: response.data,
     });
   } catch (err) {
     dispatch({

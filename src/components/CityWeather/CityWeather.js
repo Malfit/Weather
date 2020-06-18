@@ -37,7 +37,7 @@ const CityWeather = ({ data }) => {
             alt="img"
           />
         </span>
-        <Link to={`/weather-cities/${data.id}`}>
+        <Link to={`/Weather/${data.id}`}>
           <Button type="primary" className="btnAddMore">
             More data
           </Button>
